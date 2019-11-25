@@ -5,7 +5,7 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
-public class CombinerMapper extends
+public class WordCountMapper extends
 		Mapper<LongWritable, Text, Text, DoubleWritable> {
 
 	public void map(LongWritable key, Text value, Context context)
