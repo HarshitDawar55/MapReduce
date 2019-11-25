@@ -15,7 +15,7 @@ public class CombinerClient {
 			
 				Configuration c = new Configuration();
 				@SuppressWarnings("deprecation")
-				Job j = new Job(c, "Log Calculator Class");
+				Job j = new Job(c, "Combiner Program");
 				Path input = new Path(args[0]);
 				Path output= new Path(args[1]);
 				j.setJarByClass(CombinerClient.class);
